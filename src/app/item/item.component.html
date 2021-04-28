@@ -1,0 +1,58 @@
+<div>
+
+<!--
+  <div *ngFor="let item of listado">
+
+  {{item.agencia}}
+
+
+
+
+  <button (click)="editar(item.id)" >Ver</button>
+
+
+  </div>
+-->
+
+
+  <div *ngFor="let item of listado">
+
+  <div class="card card-default" id="card_contacts" (click)="editar(item.id)">
+    <div id="contacts" class="panel-collapse collapse show" aria-expanded="true" style="">
+        <ul class="list-group pull-down" id="contact-list">
+            <li class="list-group-item">
+                <div class="row w-100">
+                    <div class="col-12 col-sm-6 col-md-3 px-0">
+                        <img src="assets/images/bcp-imagen.png" style="width: 300px;" alt="Mike Anamendolla" class="rounded-circle mx-auto d-block img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                        <span class="fa fa-star-o fa-2x text-success float-right pulse" title="online now"></span>
+                        <label class="name lead">{{item.agencia}}</label>
+                        <br>
+                        <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="5842 Hillcrest Rd"></span>
+                        <span class="text-muted">{{item.distrito}}</span>
+                        <br>
+                        <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="5842 Hillcrest Rd"></span>
+                        <span class="text-muted">{{item.direccion}}</span>
+                        <br>
+
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+

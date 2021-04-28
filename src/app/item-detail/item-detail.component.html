@@ -1,0 +1,90 @@
+<!--
+
+<form [formGroup]="agenciasForm">
+
+  <label for="registeredOn">Detalle de Agencia</label>
+
+  <label for="agencia">Nombre de Agencia</label>
+  <input name="agencia"
+        formControlName="agencia"
+        type="text" />
+
+  <label for="direccion">Direccion</label>
+  <input name="direccion"
+        formControlName="direccion"
+        type="text" />
+
+  <label for="distrito">Distrito</label>
+  <input name="distrito"
+        formControlName="distrito"
+        type="text" />
+
+  <label for="lat">Latitud</label>
+  <input name="lat"
+  formControlName="lat"
+  type="text" />
+
+  <label for="lon">Longitud</label>
+  <input name="lon"
+          formControlName="lon"
+          type="text" />
+
+
+
+
+          <button (click)="editar()">sebas</button>
+
+</form>
+
+-->
+
+<div class="container">
+
+  <div class="starter-template">
+
+    <div class="row">
+
+      <div class="col-md-12 mt-5">
+
+      <form [formGroup]="agenciasForm">
+
+              <div class="form-group">
+                    <label>Nombres de Agencia</label>
+                    <input type="text" formControlName="agencia" class="form-control"/>
+
+                </div>
+                <div class="form-group">
+                  <label>Direccion</label>
+                  <input type="text" formControlName="direccion" class="form-control"/>
+
+              </div>
+              <div class="form-group">
+                <label>Distrito</label>
+                <input type="text" formControlName="distrito" class="form-control"/>
+
+            </div>
+            <div class="form-group">
+              <label>Latitud</label>
+              <input type="text" formControlName="lat" class="form-control"/>
+
+          </div>
+          <div class="form-group">
+            <label>Longitud</label>
+            <input type="text" formControlName="lon" class="form-control"/>
+
+        </div>
+        <div class="form-group">
+          <button (click)="editar()"  class="btn btn-primary">Aceptar</button>
+        </div>
+
+
+            </form>
+
+    </div>
+
+
+</div>
+
+ </div>
+
+</div>
