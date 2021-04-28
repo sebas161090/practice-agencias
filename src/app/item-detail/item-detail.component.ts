@@ -50,7 +50,6 @@ export class ItemDetailComponent implements OnInit {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.listado = JSON.parse(localStorage.getItem('agencias'));
     var tempAgencia = this.agenciasService.findbyId(id);
-    debugger;
     this.index = this.agenciasService.findIndexbyId(id);
     this.objAgencia = new Agencia();
     console.log(this.listado);

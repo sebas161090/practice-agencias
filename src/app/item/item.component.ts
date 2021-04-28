@@ -22,17 +22,14 @@ export class ItemComponent implements OnInit {
   }
 
   ngOnInit() {
-    debugger;
     if (localStorage.getItem("agencias")) {
 
         this.listado = JSON.parse(localStorage.getItem('agencias'));
 
     } else {
-      debugger;
       this.agenciasService.getAll().subscribe(result => {
         this.listado = result;
         localStorage.setItem('agencias', JSON.stringify(this.listado));
-
 
       });
 
@@ -47,7 +44,6 @@ export class ItemComponent implements OnInit {
 
 
   editar(id2: number) {
-debugger;
    // this.router.navigate(['../item-detail/', { id: id2 }]);
     this.router.navigate(['/item-detail', id2]);
 
